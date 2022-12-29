@@ -1,0 +1,21 @@
+.card {
+z-index:90;
+width:10rem;height:10rem;
+border:3px solid;border-radius:12px;
+padding:5px;display:inline-block;
+text-align:center;position:relative;
+margin:0px 1px 0px 1px;font-size:2.4rem;}
+.cardText {
+position:absolute;
+top:50%;left:50%;
+transform:translate(-50%, -50%);
+-webkit-transform:translate(-50%, -50%);
+-moz-transform:translate(-50%, -50%);
+-o-transform:translate(-50%, -50%);
+-ms-transform:translate(-50%, -50%);
+background-color:transparent;	
+padding:5px;
+z-index:100;
+white-space:nowrap;}
+body {overflow: auto;text-align:center;margin:1px}
+img {width:6rem;height:6rem;}

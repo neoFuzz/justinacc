@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justina Colour Changer</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="fluid-icon" href="http://fuzz.net.au/justinacc/icon.png" title="Justina">
+  <meta name="description" content="A simple page used for teaching kids (mostly my daughter) letters and words">
+  <meta name="author" content="Justin Condello">
+  
+  <meta property="og:title" content="Justina Colour Changer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://fuzz.net.au/justinacc/justinaweb.html">
+  <meta property="og:site_name" content="Justina Colour Changer">
+  <meta property="og:description" content="A simple WebApp used for teaching kids (mostly my daughter) letters and words">
+  <meta property="og:image" content="http://fuzz.net.au/justinacc/icon.png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Picture of Justina">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="icon" type="image/svg+xml" href="http://fuzz.net.au/justinacc/justina_inked.svg">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="http://fuzz.net.au/justinacc/justina_inked.svg">
+  <link rel="apple-touch-icon" href="http://fuzz.net.au/justinacc/apple-touch-icon.png">
+</head>
+<body>
+<div class="topright"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" onclick="showDialog('About', 'A simple WebApp used for teaching kids (mostly my daughter) letters and words. Created by Justin Condello &copy; 2021')">About</a>
+  <a href="#" onclick="showDialog('Update Notes','json:jsondata/updates.json')">Update Notes</a>
+  <a href="#" onclick="showDialog('How to Play','Press keys on the keyboard and try to type put words to find them')">How to Play</a>
+  <hr />
+  <a name="mode_swap" id="mode_swap" onclick="changeMode()">Find All Words</a>
+  <a name="foundWords" id="foundWords" onclick="showDialog('Discovered Words','words')">Discovered Words</a>
+</div>
+  <input name="fake" id="fake" style="height:50px;width:50px;position:absolute;z-index:101;top:50px;border:0 transparent;border-bottom: black 6px solid;font-size 2em"
+  type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="1"></input>
+  <div name="debugtext" id="debugtext">1234567</div>
+  <div name="disclaimer" id="disclaimer" class="centerPage disclaimer">
+	<table style="width:100%;height:100%">
+	<tr><td><div id="dTitle" name ="dTitle" class="dTitle">Disclamer</div></td></tr>
+	<tr style="height:100%"><td>
+	<div name="disclaimertext" id="disclaimertext" class="disclaimertext">
+No warranty implied, use at own risk. No data is stored on the server and no cookies are generated or stored in anyway by this web application
+	</div>
+	</td></tr>
+	<tr><td><input name="accept" id="accept" type="button" value="Accept" onclick="hideDisclaimer()" class="acceptButton" /></td></tr>
+	</table>    
+  </div>
+  <div name="middletext" id="middletext" class="centerPage">Get Ready</div>
+  <div name="gradient" id="gradient" class="gradient"></div>
+  <canvas id="page">Your Browser does not support canvas!</canvas>
+  <script src="js/worddictionary.js"></script>
+  <script src="js/main.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RB6Q4W2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6RB6Q4W2PG');
+</script>
+</body>
+</html>

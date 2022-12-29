@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916668"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="8.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="true"
+     inkscape:zoom="4.365"
+     inkscape:cx="100"
+     inkscape:cy="100"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5">
+    <inkscape:grid
+       type="xygrid"
+       id="grid829" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="43.133514"
+       y="59.043416"
+       width="69.650018"
+       height="88.741901"
+       id="rect23916" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="37.781249"
+       height="70.031249"
+       patternTransform="translate(99.730514,44.558547)"
+       id="pattern15158">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999999"
+         x="-13.03125"
+         y="70.03125"
+         id="text2498"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.999999"
+           x="-13.03125"
+           y="70.03125"
+           id="tspan22788">1</tspan></text>
+    </pattern>
+  </defs>
+  <g
+     aria-label="8"
+     id="text33938"
+     style="font-size:10.5833px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.157683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(6.3418534,0,0,6.3418534,-0.25114337,-276.34266)">
+    <path
+       d="m 5.5138619,45.69232 q 0,-0.516762 -0.346231,-0.862993 Q 4.8214,44.483096 4.2064524,44.483096 q -0.5632714,0 -0.9250052,0.310057 -0.3565663,0.310058 -0.3565663,0.837156 0,0.382404 0.180867,0.645953 0.1860345,0.263549 0.552936,0.475422 0.1601965,0.08785 0.4857569,0.242878 0.3307282,0.155029 0.5994448,0.242879 0.4495835,-0.346231 0.6097799,-0.707965 0.1601964,-0.366902 0.1601964,-0.837156 z m 0.1446936,3.85505 q 0,-0.475422 -0.1860346,-0.754474 -0.1860345,-0.279052 -0.7183001,-0.568439 -0.1756993,-0.09819 -0.470254,-0.211872 -0.2893871,-0.113688 -0.6562886,-0.268717 -0.4289131,0.28422 -0.6562886,0.702797 -0.2273756,0.41341 -0.2273756,0.945676 0,0.69763 0.4185778,1.152381 0.4237454,0.454751 1.0593634,0.454751 0.651121,0 1.0438607,-0.387572 0.3927396,-0.39274 0.3927396,-1.064531 z M 4.21162,51.769449 q -0.5736066,0 -1.0438606,-0.170531 Q 2.6975053,51.428386 2.3667772,51.107993 2.0412167,50.797935 1.8706851,50.37419 1.705321,49.945277 1.705321,49.469855 q 0,-0.625282 0.3307281,-1.147213 0.3358958,-0.527098 0.9715139,-0.837155 v -0.03101 Q 2.439124,47.123753 2.1652398,46.731013 1.8913556,46.338274 1.8913556,45.749164 q 0,-0.868161 0.6562886,-1.446935 0.6562886,-0.578775 1.6639758,-0.578775 1.0490282,0 1.6794787,0.552936 0.6356181,0.547769 0.6356181,1.405595 0,0.516763 -0.30489,1.02319 -0.2997223,0.506427 -0.8681613,0.790647 v 0.03101 q 0.6717915,0.315225 1.0180225,0.764808 0.346231,0.449584 0.346231,1.157549 0,0.987017 -0.7183001,1.65364 -0.7131325,0.666624 -1.7879989,0.666624 z"
+       id="path34978"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.157683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

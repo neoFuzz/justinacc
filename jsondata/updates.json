@@ -1,0 +1,9 @@
+<div id=updates><dl>
+<dt><i>2022-08-05</i></dt>
+<dd>fixed the issue with the update notes going out of the box</dd>
+<dt><i>2021-11-28</i></dt>
+<dd>The word game and colour game hav been merged in to the same page. Change mode button works now and swaps betwen game modes</dd>
+<dt><i>2021-10-06</i></dt>
+<dd>More JS code updates, slimmed down word dictionary code (1KB less to download), New Nav Menu item: Discovered Words - shows all the words you have found so far.</dd>
+<dt><i>2021-09-29</i></dt><dd>JS Code updates, navmenu update</dd>
+</dl></div>
