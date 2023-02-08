@@ -120,26 +120,30 @@ function hideDisclaimer() {
     if (disAccepted) {
         document.getElementById("disclaimer").hidden = true;
         document.getElementById("fake").focus();
-        document.getElementById("disclaimertext").style.height = null;
+        document.getElementById("disclaimertext").style.padding = 0;
         document.getElementById("disclaimertext").style.overflow = null;
+        document.getElementById("disclaimertext").hidden = true;
+        document.getElementById("disclaimertext").innerHTML = null;
+        document.getElementById("dtframe").hidden = false;
         disAccepted = false;
     } else {
-        document.getElementById("disclaimertext").innerHTML = "press keys on the keyboard and try to find words";
+        document.getElementById("disclaimertext").innerHTML = "Press keys on the keyboard and try to type out words to find them";
         document.getElementById("dTitle").innerHTML = "How to Play";
         disAccepted = true;
     }
 }
 function showDialog(title, displayText) {
     closeNav();
-    document.getElementById("disclaimertext").innerHTML = displayText;
     document.getElementById("dTitle").innerHTML = title;
+    var myifra = document.getElementById("dtframe");
+    myifra.contentWindow.document.head.innerHTML = '<link rel="stylesheet" href="css/styles.css?v=1.0">'
+    myifra.contentWindow.document.body.className = 'centerfr';
     if (displayText.includes('json:')) {
-        fetch('jsondata/updates.json').then(response=>response.text()).then(text=>document.getElementById("disclaimertext").innerHTML = text)
+        fetch('jsondata/updates.json').then(response=>response.text()).then(text=>myifra.contentWindow.document.body.innerHTML = text)
     }
     if (displayText == 'words') {
-        document.getElementById("disclaimertext").innerHTML = showWordList();
-        document.getElementById("disclaimertext").style.height = "100%";
-        document.getElementById("disclaimertext").style.overflow = "auto";
+        var content = '<div>'; content += showWordList(); content += '</div>';
+        myifra.contentWindow.document.body.innerHTML = content;
     }
     document.getElementById("disclaimer").hidden = false;
     if (disAccepted) {
