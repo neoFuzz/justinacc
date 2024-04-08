@@ -1,2 +1,0 @@
-document.body.style.overflow="auto";var cardString="";var x;for(var i=0;i<funWordsV2.length;i++){cardString="<div class='cardText'>"+funWordsV2[i][1];if(isNaN(funWordsV2[i][0])){cardString+="<br />"+funWordsV2[i][0];}
-cardString+="</div>";x=document.createElement("DIV");x.innerHTML=cardString;x.setAttribute("class","card");document.getElementById("cardGen").appendChild(x);}
