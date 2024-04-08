@@ -3,7 +3,7 @@ var colourBlender;
 var disAccepted = false;
 var gameMode = true;
 var context = document.getElementsByTagName('canvas')[0].getContext('2d');
-const capitalizeFirstLetter = ([first,...rest],locale=navigator.language)=>first.toLocaleUpperCase(locale) + rest.join('');
+const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) => first.toLocaleUpperCase(locale) + rest.join('');
 const keyStack = ["X", "U", "S", "T", "I", "N", "A", "8", "9"];
 document.body.bgColor = "#FFC0C0";
 function mode_1(evt) {
@@ -30,7 +30,7 @@ function mode_1(evt) {
         keyStack.push(newKey);
         keyStack.shift();
     }
-    keyStack.forEach(element=>debugString += element);
+    keyStack.forEach(element => debugString += element);
     document.getElementById("page").hidden = true;
     document.getElementById("debugtext").innerText = "" + debugString;
     for (var sample in fKeyColours) {
@@ -59,13 +59,13 @@ function mode_1(evt) {
             for (let y = 0; y < funWordsV2.length; y++) {
                 var testString = "" + funWordsV2[y][0];
                 switch (testString) {
-                case funWordTest.toLowerCase():
-                case funWordTest.toUpperCase():
-                case capitalizeFirstLetter(funWordTest.toLowerCase()):
-                    newKey = funWordsV2[y][1];
-                    funWordsV2[y][2] = true;
-                    wordChecked = true;
-                    break;
+                    case funWordTest.toLowerCase():
+                    case funWordTest.toUpperCase():
+                    case capitalizeFirstLetter(funWordTest.toLowerCase()):
+                        newKey = funWordsV2[y][1];
+                        funWordsV2[y][2] = true;
+                        wordChecked = true;
+                        break;
                 }
             }
         }
@@ -120,7 +120,7 @@ function hideDisclaimer() {
     if (disAccepted) {
         document.getElementById("disclaimer").hidden = true;
         document.getElementById("fake").focus();
-        document.getElementById("disclaimertext").style.padding = 0;
+        document.getElementById("disclaimertext").style.height = null;
         document.getElementById("disclaimertext").style.overflow = null;
         document.getElementById("disclaimertext").hidden = true;
         document.getElementById("disclaimertext").innerHTML = null;
@@ -134,12 +134,13 @@ function hideDisclaimer() {
 }
 function showDialog(title, displayText) {
     closeNav();
+    document.getElementById("disclaimertext").innerHTML = displayText;
     document.getElementById("dTitle").innerHTML = title;
     var myifra = document.getElementById("dtframe");
     myifra.contentWindow.document.head.innerHTML = '<link rel="stylesheet" href="css/styles.css?v=1.0">'
     myifra.contentWindow.document.body.className = 'centerfr';
     if (displayText.includes('json:')) {
-        fetch('jsondata/updates.json').then(response=>response.text()).then(text=>myifra.contentWindow.document.body.innerHTML = text)
+        fetch('jsondata/updates.json').then(response => response.text()).then(text => myifra.contentWindow.document.body.innerHTML = text)
     }
     if (displayText == 'words') {
         var content = '<div>'; content += showWordList(); content += '</div>';
@@ -157,24 +158,24 @@ function changeMode() {
     if (gameMode) {
         document.getElementById("mode_swap").innerHTML = "Find All Words";
         gameMode = false;
-		document.getElementById("mode_2").hidden = true;
-		document.getElementById("middletext").hidden = false;
-		document.addEventListener('keydown', mode_1);
-		closeNav();
+        document.getElementById("mode_2").hidden = true;
+        document.getElementById("middletext").hidden = false;
+        document.addEventListener('keydown', mode_1);
+        closeNav();
     } else {
         document.getElementById("mode_swap").innerHTML = "Spell The Word";
-		document.removeEventListener('keydown', mode_1);
-		document.getElementById("middletext").hidden = true;
+        document.removeEventListener('keydown', mode_1);
+        document.getElementById("middletext").hidden = true;
         gameMode = true;
-		resetBoard();
-		closeNav();
-		document.getElementById("mode_2").hidden = false;
-		document.querySelector("#id0").focus();
+        resetBoard();
+        closeNav();
+        document.getElementById("mode_2").hidden = false;
+        document.querySelector("#id0").focus();
     }
 }
 function debugModeShow(boolSwitch) {
-	document.getElementById("debugtext").hidden = !boolSwitch;
-	document.getElementById("fake").hidden = !boolSwitch;
+    document.getElementById("debugtext").hidden = !boolSwitch;
+    document.getElementById("fake").hidden = !boolSwitch;
 }
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
